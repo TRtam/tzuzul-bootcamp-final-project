@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Saira:wght@200&display=swap');
+
+
+/*----------------------------Titulos-----------------------*/
+.title{
+    font-family: 'Saira', sans-serif;
+    font-size: 1.5em;
+    color: rgba(87, 72, 226, 0.568);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 50px;
+}
+
+/*-------------------Explicación proyect--------------------------*/
+.proyect{
+    font-family: 'Saira', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    color: #000;
+    margin: 20px;
+}
+
+/*-------------------------------Contributors----------------------------------*/
+.contributors{
+    margin-top: 150px;
+    font-family: 'Saira', sans-serif;
+    
+}
+.contributors_title{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+    font-size: 1.5em;
+}
+.wrapper_contributors {
+    display: grid;
+    display: flex;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+    justify-content: center;
+  }
+  .contributor{
+      flex-direction: column;
+      font-size: 1.5em;
+      margin: 30px;
+  }
+  .contributor img{
+      width: 200px;
+      height: 300px;
+      border: 2px solid rgb(63, 38, 170);
+      border-radius: 100px;
+  }
+  .contributor img:hover{
+    -webkit-transform: rotateY(180deg);
+    -webkit-transform-style: preserve-3d;
+    transform: rotateY(180deg);
+    transform-style: preserve-3d;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  }
+  .name{
+      text-align: center;
+  }
+
+

@@ -9,7 +9,7 @@
 
 /*------------Nav-----------------*/
   nav{
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(86,86,218,0.9556197478991597) 35%, rgba(0,212,255,1) 100%);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(86,86,218,0.9556197478991597) 35%, rgb(56, 123, 136) 100%);
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -68,25 +68,36 @@
     padding-left: 10px;
     margin-right: 5px;
   }
+  .user{
+    font-family: 'Saira', sans-serif;
+    color: #fff;
+  }
+  .account_sub a{
+    color: #fff;
+    text-decoration: none;
+  }
+  .account_sub a:hover{
+    color: darkblue;
+  }
  
 
  /*---------Slider-----------*/
   .section_slider{
     margin:0;
     padding: 0;
-    height: 500px;
+    height: 400px;
     display: flex;
     justify-content: center;
     align-items: center;
   }
   .slider{
     width: 100%;
-    height: 500px;
+    height: 400px;
     overflow: hidden;
   }
   .slide{
     width: 500%;
-    height: 500px;
+    height: 400px;
     display: flex;
   }
 
@@ -99,7 +110,7 @@
   }
   .st img{
     width: 100%;
-    height: 500px;
+    height: 400px; 
   }
   .nav_m{
     position: absolute;
@@ -109,7 +120,7 @@
     display: flex;
   }
   .m_btn{
-     border: 2px solid rgba(0, 0, 0, 0.5);
+     border: 2px solid rgba(240, 235, 235, 0.5);
      padding: 5px;
      border-radius: 10px;
      cursor: pointer;
@@ -119,7 +130,7 @@
     margin-right: 30px;
   }
   .m_btn:hover{
-    background-color: #000;
+    background-color: rgb(248, 244, 244);
   }
   #radio1:checked ~.first{
     margin-left: 0;
@@ -141,7 +152,7 @@
     justify-content: center;
   }
   .nav_auto div{
-    border: 2px solid rgba(0, 0, 0, 0.5);
+    border: 2px solid rgba(240, 235, 235, 0.5);
     padding: 5px;
     border-radius: 10px;
     transition: 1s;
@@ -151,80 +162,122 @@
     justify-content: center;
   }
   #radio1:checked ~ .nav_auto .a_b1{
-    background-color: #000;
+    background-color: rgb(248, 244, 244);
   }
   #radio2:checked ~ .nav_auto .a_b2{
-    background-color: #000;
+    background-color: rgb(248, 244, 244);
   }
   #radio3:checked ~ .nav_auto .a_b3{
-    background-color: #000;
+    background-color: rgb(248, 244, 244);
   }
   #radio4:checked ~ .nav_auto .a_b4{
-    background-color: #000;
+    background-color: rgb(248, 244, 244);
   }
 
  /*----------------------------*/
 
-  
+
   main{
     margin-top: 20px;
   }
+  .container_title{
+    width: 100%;
+    position: absolute;
+  }
 
+  .feature_title{
+    font-family: 'Saira', sans-serif;
+    font-size: 3em;
+    margin-left: 10px;
+  }
 
+  .container_products{
+      display: flex;
+      height: 600px;
+      width: 100%;
+  }
 
+  .product{
+    padding: 10px 20px 10px 20px;
+  }
 
 
  /*--------Foot----------*/
   .foot{
-	background-color: rgb(36, 80, 226);
-    
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(86,86,218,0.9556197478991597) 35%, rgb(56, 123, 136) 100%);
 	bottom: 0px;
-	margin-top: 41%;
+	margin-top: 50px;
 	width: 100%;
-	padding: 20px 0px;
-	
+  height: 300px;
+	padding-top: 20px;
   }
 
-  .social {
-    text-align:center;
-    padding-bottom:25px;
+  .wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
   }
 
-  .social > a {
-    font-size:30px;
-    line-height:40px;
-    display:inline-block;
-    text-align:center;
-    margin:0 8px;
-    color:inherit;
-    opacity:0.75;
+  .link_footer{
+    flex-direction: column;
+    margin-left: 30px;
   }
-
-  .social > a:hover{
-      color: #fff;
+  .link_footer h2{
+    color: #fff;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 2em;
+    padding-left: 30px;
   }
-
   .list_inline {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: flex-end;
     padding:0;
     list-style:none;
     font-size:18px;
+    margin: 20px;
     line-height:1.6;
-    margin-bottom:0;
     color: #fff;;
     font-family: 'Saira', sans-serif;
   }
-
   .list_inline li{
+    margin: 20px;
     padding:0 10px;
-      
   }
-
   .list_inline a {
     color:inherit;
     text-decoration:none;
     opacity:0.8;
   }
+  .list_inline a:hover{
+      color: rgb(0, 0, 0);
+  }
+
+  .social{
+    display: flex;
+    flex-direction: column;
+    text-align:center;
+    padding-bottom:25px;
+  }
+  .social h2{
+     font-family: 'Saira', sans-serif;
+     color: #fff;
+     font-size: 2em;
+     margin-bottom: 20px;
+  }
+  .icon{
+    font-size: 25px;
+    color: #fff;
+    margin: 15px;
+  }
+  .social a:hover{
+    color: rgb(26, 24, 24);
+  }
+
+  .atencion_cliente img{
+    width: 250px;
+    height: 250px;
+    border-radius: 15px;
+  }
+
+ 
+
+  
