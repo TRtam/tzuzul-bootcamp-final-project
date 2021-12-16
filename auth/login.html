@@ -9,36 +9,29 @@
     <link rel="stylesheet" href="../css/login.css">
 </head>
 <body>
-    <nav class="navbar">
-        <div class="logo">
+    <nav class="new">
+        <div class="electronic">
             <a href="../index.html">Electronic Shop</a>
         </div>
     </nav>
-    <main>
-        <div class="container">
-            <h1 class="title">Hola, ingresa tu email y contraseña</h1>
-            <form id="login-form" autocomplete="on">
-                <!-- email -->
-                <div class="form-item">
-                    <label for="email">
-                        Email
-                    </label>
-                    <input name="email" type="email" placeholder="example@email.com" autocomplete="off">
-                </div>
-                <!-- password -->
-                <div class="form-item">
-                    <label for="username">
-                        Contraseña
-                    </label>
-                    <input name="password" type="password" placeholder="●●●●●●">
-                </div>
-                <!-- submit -->
-                <div class="form-item">
-                    <input class="" type="submit" value="Ingresar">
-                </div>
-            </form>
+    
+        <div class="login">
+            <div class="form-container">
+    
+                <form action="" class="form">
+                    <label for="email" class="label">Email address</label>
+                    <input type="text" id="email" placeholder="email@email.com" class="input input-email">
+    
+                    <label for="password" class="label">Password</label>
+                    <input type="password" id="password" placeholder="********" class="input input-password">
+    
+                    <input type="submit" value="Log in" class="primary-button login-button">
+                    <a href="/">Forgot my password</a>
+                </form>
+    
+                <button class="segundary-button signup-button">Sign up</button>
+            </div>
         </div>
-    </main>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="../js/login.js"></script>
 </body>
