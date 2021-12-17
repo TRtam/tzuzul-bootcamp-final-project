@@ -31,9 +31,9 @@ registerForm.onsubmit = event => {
         .then(response => {
             console.log("successfully created cart");
 
-            const user = localStorage.getItem("user");
+            const user = JSON.parse(localStorage.getItem("user"));
             user.cart = response.data;
-            localStorage.setItem("user", user);
+            localStorage.setItem("user", JSON.stringify(user));
 
             window.location = "../index.html";
         })
