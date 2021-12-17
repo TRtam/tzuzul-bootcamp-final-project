@@ -24,6 +24,7 @@ window.onload = async () => {
         const div = document.createElement("div");
         div.className = "no-account"
         div.innerHTML = `
+<<<<<<< HEAD
             <div class="sesion">
                 <div>
                     <b>Hola,</b> Inicia tu sesi&oacute;n 
@@ -34,6 +35,13 @@ window.onload = async () => {
             </div>
             <div class="cart_sesion">
                 <button class="btn_cart" id="carrito"><img class="cart-icon" src="img/cart-icon.svg" alt="cart"></button>
+=======
+            <div class="">
+                <b>Hola,</b> Inicia tu sesi&oacute;n 
+            </div>
+            <div class="account_sub">
+                <a href="auth/login.html" data-test-common="login_register_button" class="mus-link1">Ingres&aacute;</a> | <a href="auth/register.html" data-test-common="login_register_button" class="mus-link1">Registrate</a>
+>>>>>>> a571d7c35bf9f8854c6579fb992a86dc8a703b02
             </div>
         `;
         userDiv.appendChild(div);
@@ -43,11 +51,16 @@ window.onload = async () => {
         div.innerHTML = `
             <img class="user-icon" src="img/user-icon.svg" alt="account">
             <span class="user-text">${user.username}</span>
+<<<<<<< HEAD
             <button class="btn_cart" id="carrito"><img class="cart-icon" src="img/cart-icon.svg" alt="cart"></button>
+=======
+            <img class="cart-icon" src="img/cart-icon.svg" alt="cart">
+>>>>>>> a571d7c35bf9f8854c6579fb992a86dc8a703b02
             <span class="cart-total">${(cart && cart.products.length) || 0}</span>
         `;
         userDiv.appendChild(div);
     }
+<<<<<<< HEAD
     const btnCarrito=document.getElementById("carrito");
     btnCarrito.onclick = function(){
         alert("No has iniciado sesión")
@@ -55,3 +68,6 @@ window.onload = async () => {
 
 }
 
+=======
+}
+>>>>>>> a571d7c35bf9f8854c6579fb992a86dc8a703b02
