@@ -1,7 +1,7 @@
 # tzuzul-bootcamp-final-project.
 <div>
 <p align='left'>
-    <img style = "width: 130px" src="logo_small" </img>
+    <img style = "width: 130px" src="img/logo_small"></img>
 </p>
 </div>
 
