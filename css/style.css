@@ -228,7 +228,6 @@ body {
   font-family: 'Quicksand', sans-serif;
 }
 
-
 .main-container {
   padding: 40px 30px; 
 }
@@ -236,7 +235,7 @@ body {
 .card-container {
   display: grid;
   grid-template-columns: repeat(auto-fill, 240px);
-  gap: 26px;
+  gap: 30px;
   place-content: center;
 }
 
@@ -279,6 +278,10 @@ body {
 .product-info figure img {
   width: 35px;
   height: 35px;
+}
+
+.product-card:hover{
+  transform: translateY(-3%);
 }
 
 @media (max-width: 640px){
