@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/register.css">
+</head>
+<body>
+    <nav class="new">
+        <div class="electronic">
+            <a href="../index.html">Electronic Shop</a>
+        </div>
+    </nav>
+    <div class="login">
+
+        <div class="form-container">
+
+            <h1 class="title">My account</h1>
+
+            <form action="" class="form" id="register-form">
+                <div>
+                    <label for="name" class="label">Name</label>
+                    <input type="text" id="name" placeholder="name" class="input input-name">
+    
+                    <label for="email" class="label">Email address</label>
+                    <input type="email" id="email" placeholder="email@email.com" class="input input-email">
+    
+                    <label for="password" class="label">Password</label>
+                    <input type="password" id="password" placeholder="********" class="input input-password">    
+                </div>
+                <input type="submit" value="Create" class="primary-button login-button">
+            </form>
+        </div>
+    </div>
+
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="../js/register.js"></script>
+</body>
+</html>

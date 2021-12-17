@@ -24,12 +24,14 @@
     color: #000;
     margin: 20px;
 }
+.title_proyect{
+    margin-top: 15px;
+}
 
 /*-------------------------------Contributors----------------------------------*/
 .contributors{
     margin-top: 150px;
     font-family: 'Saira', sans-serif;
-    
 }
 .contributors_title{
     display: flex;
@@ -53,8 +55,7 @@
   .contributor img{
       width: 200px;
       height: 300px;
-      border: 2px solid rgb(63, 38, 170);
-      border-radius: 100px;
+      border-radius: 50px;
   }
   .contributor img:hover{
     -webkit-transform: rotateY(180deg);
