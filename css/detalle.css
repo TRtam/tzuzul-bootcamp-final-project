@@ -95,3 +95,7 @@ body {
     font-weight: bold;
     margin: 40px 0;
 }
+
+.button:hover{
+    transform: translateY(-3%);
+}

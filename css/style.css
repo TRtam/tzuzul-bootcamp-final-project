@@ -283,6 +283,19 @@ body {
 .product-card:hover{
   transform: translateY(-3%);
 }
+.info_btn{
+  text-decoration: none;
+  color: #000000;
+}
+.info_btn:hover{
+  color: rgb(4, 4, 138);
+}
+.btn_cartCard{
+  border: none;
+}
+.btn_cartCard:hover{
+  transform: translateY(-3%);
+}
 
 @media (max-width: 640px){
   .card-container {
