@@ -32,10 +32,10 @@ window.onload = async () => {
                     <a href="auth/login.html" data-test-common="login_register_button" class="mus-link1">Ingres&aacute;</a> | <a href="auth/register.html" data-test-common="login_register_button" class="mus-link1">Registrate</a>
                 </div>
             </div>
-            <div class="cart_sesion">
-                <button class="btn_cart" id="carrito"><img class="cart-icon" src="img/cart-icon.svg" alt="cart"></button>
-            </div>
-        `;
+            `;
+            // <div class="cart_sesion">
+            //     <button class="btn_cart" id="carrito"><img class="cart-icon" src="img/cart-icon.svg" alt="cart"></button>
+            // </div>
         userDiv.appendChild(div);
     }else {
         const div = document.createElement("div");
@@ -50,15 +50,18 @@ window.onload = async () => {
     }
 
     const btnCarrito=document.getElementById("carrito");
-    btnCarrito.onclick = function(){
-        alert("No has iniciado sesión")
+
+    if(btnCarrito) {
+        btnCarrito.onclick = function(){
+            alert("No has iniciado sesión")
+        }
     }
 }
 
 //boton carrito
 const btn_strapi = document.getElementById("btn_strapi")
 
-btn_strapi.onclick = () =>{
+btn_strapi.onclick = async () =>{
     const idCarrito = localStorage.getItem(cartId)
     console.log("mi carrito")
     
@@ -72,22 +75,22 @@ btn_strapi.onclick = () =>{
         });
         const cart = await response.json();
         return cart;
-        console.log("Mi carrito", cart);
+        // console.log("Mi carrito", cart);
 
-        const idsProductos = cart.productos.map(producto=>producto.id)
-        idsProductos.push()
-        const response = await fetch("http://localhost:1337/carts/" + cartId, {
-            method:"PUT",
-            headers: {
-                "Authorization": "Bearer " + userJWT
-            },
-            body:JSON.stringify({
-                productos: idsProductos
-            })
-        });
-        const cart = await response.json();
-        return cart;
-        console.log("Mi carrito", cart)
+        // const idsProductos = cart.productos.map(producto=>producto.id)
+        // idsProductos.push()
+        // const response = await fetch("http://localhost:1337/carts/" + cartId, {
+        //     method:"PUT",
+        //     headers: {
+        //         "Authorization": "Bearer " + userJWT
+        //     },
+        //     body:JSON.stringify({
+        //         productos: idsProductos
+        //     })
+        // });
+        // const cart = await response.json();
+        // return cart;
+        // console.log("Mi carrito", cart)
     }else{
         //crea un carrito
         const response = await fetch("http://localhost:1337/carts/", {
@@ -104,7 +107,7 @@ btn_strapi.onclick = () =>{
         });
         const cart = await response.json();
         return cart;
-        console.log("Mi carrito", cart)
-        localStorage.setItem("cartId", cart.id)
+        // console.log("Mi carrito", cart)
+        // localStorage.setItem("cartId", cart.id)
     }
 }
